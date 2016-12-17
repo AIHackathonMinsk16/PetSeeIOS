@@ -8,8 +8,9 @@
 
 #import "PSMainViewController.h"
 #import "MotionJpegImageView.h"
+#import <SocketRocket/SRWebSocket.h>
 
-@interface PSMainViewController ()
+@interface PSMainViewController () <SRWebSocketDelegate>
 
 
 @property (retain, nonatomic) IBOutlet MotionJpegImageView *imageView;
@@ -43,12 +44,23 @@
   self.imageView = [[MotionJpegImageView alloc] initWithFrame:webFrame];
   self.imageView.url = url;
   [_imageView play];
-
+  
+  [self confgureWebSockets];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)confgureWebSockets {
+  
+  NSURL *url = [NSURL URLWithString:@"wss://ws.pusherapp.com/app/4e0ebd7a8b66fa3554a4?protocol=6&client=js&version=2.0.0&flash=false"];
+  
+  NSURLRequest *request = [NSURLRequest requestWithURL:url];
+  SRWebSocket *rusSocket = [[SRWebSocket alloc] initWithURLRequest:request];
+  rusSocket.delegate = self;
+  [rusSocket open];
 }
 
 /*
