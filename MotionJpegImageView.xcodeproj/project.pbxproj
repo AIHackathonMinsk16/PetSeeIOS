@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9211D5891E05B05F007660D3 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9211D5881E05B05F007660D3 /* Media.xcassets */; };
 		9231F56D1E05585600E83D01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9231F56C1E05585600E83D01 /* Main.storyboard */; };
 		9231F5701E05589500E83D01 /* PSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9231F56F1E05589500E83D01 /* PSMainViewController.m */; };
 		9231F57E1E05625600E83D01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9231F57D1E05625600E83D01 /* Launch Screen.storyboard */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		0C423F4FF198E32AB81BEE42 /* Pods-MotionJpegImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionJpegImageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotionJpegImageView/Pods-MotionJpegImageView.release.xcconfig"; sourceTree = "<group>"; };
+		9211D5881E05B05F007660D3 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		9231F56C1E05585600E83D01 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9231F56E1E05589500E83D01 /* PSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMainViewController.h; sourceTree = "<group>"; };
 		9231F56F1E05589500E83D01 /* PSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMainViewController.m; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				C636B833143B7538008CB95D /* main.m */,
 				C636B835143B7538008CB95D /* MotionJpegImageView-Prefix.pch */,
 				C636B84C143B760E008CB95D /* Localizable.strings */,
+				9211D5881E05B05F007660D3 /* Media.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9211D5891E05B05F007660D3 /* Media.xcassets in Resources */,
 				C636B83F143B7538008CB95D /* MainWindow_iPhone.xib in Resources */,
 				C636B84D143B760E008CB95D /* Localizable.strings in Resources */,
 				9231F57E1E05625600E83D01 /* Launch Screen.storyboard in Resources */,
