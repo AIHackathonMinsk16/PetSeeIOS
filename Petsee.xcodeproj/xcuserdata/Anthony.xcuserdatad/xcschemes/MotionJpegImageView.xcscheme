@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C636B822143B7538008CB95D"
-               BuildableName = "MotionJpegImageView.app"
-               BlueprintName = "MotionJpegImageView"
-               ReferencedContainer = "container:MotionJpegImageView.xcodeproj">
+               BuildableName = "Petsee.app"
+               BlueprintName = "Petsee"
+               ReferencedContainer = "container:Petsee.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C636B822143B7538008CB95D"
-            BuildableName = "MotionJpegImageView.app"
-            BlueprintName = "MotionJpegImageView"
-            ReferencedContainer = "container:MotionJpegImageView.xcodeproj">
+            BuildableName = "Petsee.app"
+            BlueprintName = "Petsee"
+            ReferencedContainer = "container:Petsee.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C636B822143B7538008CB95D"
-            BuildableName = "MotionJpegImageView.app"
-            BlueprintName = "MotionJpegImageView"
-            ReferencedContainer = "container:MotionJpegImageView.xcodeproj">
+            BuildableName = "Petsee.app"
+            BlueprintName = "Petsee"
+            ReferencedContainer = "container:Petsee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C636B822143B7538008CB95D"
-            BuildableName = "MotionJpegImageView.app"
-            BlueprintName = "MotionJpegImageView"
-            ReferencedContainer = "container:MotionJpegImageView.xcodeproj">
+            BuildableName = "Petsee.app"
+            BlueprintName = "Petsee"
+            ReferencedContainer = "container:Petsee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

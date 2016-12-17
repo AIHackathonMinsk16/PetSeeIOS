@@ -23,7 +23,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import "MotionJpegImageViewAppDelegate_iPhone.h"
+#import "PSAppDelegate.h"
 
 @implementation MotionJpegImageViewAppDelegate_iPhone
 

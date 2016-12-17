@@ -18,7 +18,7 @@
 		C636B82C143B7538008CB95D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C636B82B143B7538008CB95D /* CoreGraphics.framework */; };
 		C636B834143B7538008CB95D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C636B833143B7538008CB95D /* main.m */; };
 		C636B838143B7538008CB95D /* MotionJpegImageViewAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C636B837143B7538008CB95D /* MotionJpegImageViewAppDelegate.mm */; };
-		C636B83C143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C636B83B143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m */; };
+		C636B83C143B7538008CB95D /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C636B83B143B7538008CB95D /* PSAppDelegate.m */; };
 		C636B83F143B7538008CB95D /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C636B83D143B7538008CB95D /* MainWindow_iPhone.xib */; };
 		C636B84D143B760E008CB95D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C636B84C143B760E008CB95D /* Localizable.strings */; };
 		C636B850143B7622008CB95D /* MotionJpegImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C636B84F143B7622008CB95D /* MotionJpegImageView.mm */; };
@@ -34,17 +34,17 @@
 		9231F5821E058C5800E83D01 /* PSApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSApiManager.h; sourceTree = "<group>"; };
 		9231F5831E058C5800E83D01 /* PSApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSApiManager.m; sourceTree = "<group>"; };
 		AD7E8F52601D348FFBF9D023 /* libPods-MotionJpegImageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotionJpegImageView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C636B823143B7538008CB95D /* MotionJpegImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionJpegImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C636B823143B7538008CB95D /* Petsee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petsee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C636B827143B7538008CB95D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C636B829143B7538008CB95D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C636B82B143B7538008CB95D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C636B82F143B7538008CB95D /* MotionJpegImageView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MotionJpegImageView-Info.plist"; sourceTree = "<group>"; };
+		C636B82F143B7538008CB95D /* Petsee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Petsee-Info.plist"; sourceTree = "<group>"; };
 		C636B833143B7538008CB95D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C636B835143B7538008CB95D /* MotionJpegImageView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MotionJpegImageView-Prefix.pch"; sourceTree = "<group>"; };
+		C636B835143B7538008CB95D /* Petsee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Petsee-Prefix.pch"; sourceTree = "<group>"; };
 		C636B836143B7538008CB95D /* MotionJpegImageViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageViewAppDelegate.h; sourceTree = "<group>"; };
 		C636B837143B7538008CB95D /* MotionJpegImageViewAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MotionJpegImageViewAppDelegate.mm; sourceTree = "<group>"; };
-		C636B83A143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MotionJpegImageViewAppDelegate_iPhone.h; path = iPhone/MotionJpegImageViewAppDelegate_iPhone.h; sourceTree = "<group>"; };
-		C636B83B143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MotionJpegImageViewAppDelegate_iPhone.m; path = iPhone/MotionJpegImageViewAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		C636B83A143B7538008CB95D /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PSAppDelegate.h; path = iPhone/PSAppDelegate.h; sourceTree = "<group>"; };
+		C636B83B143B7538008CB95D /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PSAppDelegate.m; path = iPhone/PSAppDelegate.m; sourceTree = "<group>"; };
 		C636B83E143B7538008CB95D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
 		C636B84C143B760E008CB95D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C636B84E143B7622008CB95D /* MotionJpegImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionJpegImageView.h; sourceTree = "<group>"; };
@@ -67,15 +67,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9231F57F1E058C1600E83D01 /* Vendors */ = {
+		9211D58A1E05E9CE007660D3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				C636B83A143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.h */,
-				C636B83B143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m */,
+				C636B83A143B7538008CB95D /* PSAppDelegate.h */,
+				C636B83B143B7538008CB95D /* PSAppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		9211D58B1E05E9DB007660D3 /* MotionJpemImageView */ = {
+			isa = PBXGroup;
+			children = (
 				C636B836143B7538008CB95D /* MotionJpegImageViewAppDelegate.h */,
 				C636B837143B7538008CB95D /* MotionJpegImageViewAppDelegate.mm */,
 				C636B84E143B7622008CB95D /* MotionJpegImageView.h */,
 				C636B84F143B7622008CB95D /* MotionJpegImageView.mm */,
+			);
+			name = MotionJpemImageView;
+			sourceTree = "<group>";
+		};
+		9231F57F1E058C1600E83D01 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				9211D58B1E05E9DB007660D3 /* MotionJpemImageView */,
 			);
 			name = Vendors;
 			sourceTree = "<group>";
@@ -101,7 +116,7 @@
 		C636B818143B7538008CB95D = {
 			isa = PBXGroup;
 			children = (
-				C636B82D143B7538008CB95D /* MotionJpegImageView */,
+				C636B82D143B7538008CB95D /* Petsee */,
 				C636B826143B7538008CB95D /* Frameworks */,
 				C636B824143B7538008CB95D /* Products */,
 				F91B142A99098EDD6C8CF82B /* Pods */,
@@ -111,7 +126,7 @@
 		C636B824143B7538008CB95D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C636B823143B7538008CB95D /* MotionJpegImageView.app */,
+				C636B823143B7538008CB95D /* Petsee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +142,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C636B82D143B7538008CB95D /* MotionJpegImageView */ = {
+		C636B82D143B7538008CB95D /* Petsee */ = {
 			isa = PBXGroup;
 			children = (
+				9211D58A1E05E9CE007660D3 /* Application */,
 				9231F5811E058C4000E83D01 /* Model */,
 				C636B839143B7538008CB95D /* StoryBoards */,
 				9231F5801E058C2C00E83D01 /* ViewControllers */,
 				9231F57F1E058C1600E83D01 /* Vendors */,
 				C636B82E143B7538008CB95D /* Supporting Files */,
 			);
+			name = Petsee;
 			path = MotionJpegImageView;
 			sourceTree = "<group>";
 		};
 		C636B82E143B7538008CB95D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C636B82F143B7538008CB95D /* MotionJpegImageView-Info.plist */,
+				C636B82F143B7538008CB95D /* Petsee-Info.plist */,
 				C636B833143B7538008CB95D /* main.m */,
-				C636B835143B7538008CB95D /* MotionJpegImageView-Prefix.pch */,
+				C636B835143B7538008CB95D /* Petsee-Prefix.pch */,
 				C636B84C143B760E008CB95D /* Localizable.strings */,
 				9211D5881E05B05F007660D3 /* Media.xcassets */,
 			);
@@ -173,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C636B822143B7538008CB95D /* MotionJpegImageView */ = {
+		C636B822143B7538008CB95D /* Petsee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C636B849143B7538008CB95D /* Build configuration list for PBXNativeTarget "MotionJpegImageView" */;
+			buildConfigurationList = C636B849143B7538008CB95D /* Build configuration list for PBXNativeTarget "Petsee" */;
 			buildPhases = (
 				E27C1E2122E3863469879D67 /* [CP] Check Pods Manifest.lock */,
 				C636B81F143B7538008CB95D /* Sources */,
@@ -188,9 +205,9 @@
 			);
 			dependencies = (
 			);
-			name = MotionJpegImageView;
+			name = Petsee;
 			productName = MotionJpegImageView;
-			productReference = C636B823143B7538008CB95D /* MotionJpegImageView.app */;
+			productReference = C636B823143B7538008CB95D /* Petsee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +223,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C636B81D143B7538008CB95D /* Build configuration list for PBXProject "MotionJpegImageView" */;
+			buildConfigurationList = C636B81D143B7538008CB95D /* Build configuration list for PBXProject "Petsee" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,7 +235,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C636B822143B7538008CB95D /* MotionJpegImageView */,
+				C636B822143B7538008CB95D /* Petsee */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +311,7 @@
 				C636B834143B7538008CB95D /* main.m in Sources */,
 				C636B838143B7538008CB95D /* MotionJpegImageViewAppDelegate.mm in Sources */,
 				9231F5701E05589500E83D01 /* PSMainViewController.m in Sources */,
-				C636B83C143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m in Sources */,
+				C636B83C143B7538008CB95D /* PSAppDelegate.m in Sources */,
 				C636B850143B7622008CB95D /* MotionJpegImageView.mm in Sources */,
 				9231F5841E058C5800E83D01 /* PSApiManager.m in Sources */,
 			);
@@ -365,9 +382,9 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = XMY24F5S72;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MotionJpegImageView/MotionJpegImageView-Prefix.pch";
+				GCC_PREFIX_HEADER = "MotionJpegImageView/Petsee-Prefix.pch";
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "MotionJpegImageView/MotionJpegImageView-Info.plist";
+				INFOPLIST_FILE = "MotionJpegImageView/Petsee-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiTechParkBelarus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,9 +398,9 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = XMY24F5S72;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MotionJpegImageView/MotionJpegImageView-Prefix.pch";
+				GCC_PREFIX_HEADER = "MotionJpegImageView/Petsee-Prefix.pch";
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "MotionJpegImageView/MotionJpegImageView-Info.plist";
+				INFOPLIST_FILE = "MotionJpegImageView/Petsee-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hiTechParkBelarus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,7 +411,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C636B81D143B7538008CB95D /* Build configuration list for PBXProject "MotionJpegImageView" */ = {
+		C636B81D143B7538008CB95D /* Build configuration list for PBXProject "Petsee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C636B847143B7538008CB95D /* Debug */,
@@ -403,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C636B849143B7538008CB95D /* Build configuration list for PBXNativeTarget "MotionJpegImageView" */ = {
+		C636B849143B7538008CB95D /* Build configuration list for PBXNativeTarget "Petsee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C636B84A143B7538008CB95D /* Debug */,

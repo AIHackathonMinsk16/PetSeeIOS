@@ -25,6 +25,6 @@
 
 #import "MotionJpegImageViewAppDelegate.h"
 
-@interface MotionJpegImageViewAppDelegate_iPhone : MotionJpegImageViewAppDelegate
+@interface PSAppDelegate : MotionJpegImageViewAppDelegate
 
 @end
