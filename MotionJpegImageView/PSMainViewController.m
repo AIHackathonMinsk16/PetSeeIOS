@@ -11,8 +11,9 @@
 
 @interface PSMainViewController ()
 
-@property (strong, nonatomic) UIWebView *webView;
+
 @property (retain, nonatomic) IBOutlet MotionJpegImageView *imageView;
+@property (retain, nonatomic) IBOutlet UIWebView *webView;
 
 @end
 
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-  self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+//  self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
   self.webView.userInteractionEnabled = NO;
   CGFloat scaleRatio = 1;
   CGAffineTransform scalingTransform =
@@ -62,6 +63,7 @@
 
 - (void)dealloc {
   [_imageView release];
+  [_webView release];
   [super dealloc];
 }
 - (void)viewDidUnload {

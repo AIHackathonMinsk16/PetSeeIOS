@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,28 +22,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hji-x5-Rkh">
-                                <rect key="frame" x="67" y="172" width="240" height="240"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etI-d1-64i">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="1Ir-1k-TGX"/>
+                                    <constraint firstAttribute="width" secondItem="etI-d1-64i" secondAttribute="height" multiplier="1:1" id="36A-kj-WQG"/>
                                 </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21i-vT-iIu">
-                                <rect key="frame" x="164" y="462" width="46" height="30"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTa-ye-RhT">
+                                <rect key="frame" x="164" y="419" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="M38-qd-JRx"/>
+                                    <constraint firstAttribute="width" constant="46" id="WBK-K5-y0e"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.75686274509999996" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="hji-x5-Rkh" firstAttribute="top" secondItem="0Fb-WC-pSn" secondAttribute="bottom" constant="152" id="1lF-o6-9Tx"/>
-                            <constraint firstItem="21i-vT-iIu" firstAttribute="top" secondItem="hji-x5-Rkh" secondAttribute="bottom" constant="50" id="Cq7-Xj-L8A"/>
-                            <constraint firstItem="hji-x5-Rkh" firstAttribute="leading" secondItem="ifb-Uf-K7n" secondAttribute="leadingMargin" constant="51" id="JiP-eE-F84"/>
-                            <constraint firstItem="21i-vT-iIu" firstAttribute="centerX" secondItem="hji-x5-Rkh" secondAttribute="centerX" id="aLX-lh-m78"/>
-                            <constraint firstItem="hji-x5-Rkh" firstAttribute="centerX" secondItem="ifb-Uf-K7n" secondAttribute="centerX" id="gNA-m3-TVU"/>
+                            <constraint firstItem="FTa-ye-RhT" firstAttribute="centerX" secondItem="ifb-Uf-K7n" secondAttribute="centerX" id="43z-ib-rsj"/>
+                            <constraint firstItem="FTa-ye-RhT" firstAttribute="top" secondItem="etI-d1-64i" secondAttribute="bottom" constant="44" id="4TC-L2-nSG"/>
+                            <constraint firstItem="etI-d1-64i" firstAttribute="leading" secondItem="ifb-Uf-K7n" secondAttribute="leading" id="71R-Qv-1Wn"/>
+                            <constraint firstAttribute="trailing" secondItem="etI-d1-64i" secondAttribute="trailing" id="GEN-IM-AeC"/>
+                            <constraint firstItem="etI-d1-64i" firstAttribute="top" secondItem="ifb-Uf-K7n" secondAttribute="top" id="kzl-rd-fHT"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="hji-x5-Rkh" id="LkX-Li-E6c"/>
+                        <outlet property="webView" destination="etI-d1-64i" id="MJR-0K-3gr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7X-nv-RwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
