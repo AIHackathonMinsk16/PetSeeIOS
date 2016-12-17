@@ -29,33 +29,7 @@
 
 -           (BOOL)application:(UIApplication *)application 
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Demonstrates the dramatic performance difference between loading M-JPEGs 
-    // through UIWebView (top) vs MotionJpegImageView (bottom)
-    
-//    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0, 0.0, 640.0, 480.0)];
-//    _webView.userInteractionEnabled = NO;
-//    CGFloat scaleRatio = self.window.bounds.size.width / _webView.bounds.size.width;
-//    CGAffineTransform scalingTransform = 
-//        CGAffineTransformScale(CGAffineTransformIdentity, scaleRatio, scaleRatio);
-//    [_webView setTransform:scalingTransform];
-//    CGRect webFrame = _webView.frame;
-//    webFrame.origin.y = 0.0;
-//    webFrame.origin.x = 0.0;
-//    _webView.frame = webFrame;
-//    
-//    NSURL *url = [NSURL URLWithString:@"http://195.67.26.73/mjpg/video.mjpg"];
-//    
-//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//    [_webView loadRequest:request];
-//    [self.window addSubview:_webView];
-//    
-//    webFrame.origin.y += webFrame.size.height;
-//    _imageView = [[MotionJpegImageView alloc] initWithFrame:webFrame];
-//    _imageView.url = url;
-//    [self.window addSubview:_imageView];
-//    [_imageView play];
-//    
-//    [self.window makeKeyAndVisible];
+ [application setStatusBarHidden:YES];
     return YES;
 }
 

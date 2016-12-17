@@ -49,10 +49,10 @@
                                     <constraint firstAttribute="trailing" secondItem="swx-iY-Pzz" secondAttribute="trailing" constant="16" id="v7O-ki-M18"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xii-27-SDu">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9r-QK-fFt">
                                 <rect key="frame" x="0.0" y="54" width="600" height="613"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9e-Ge-Mvu" userLabel="ControlView">
                                 <rect key="frame" x="0.0" y="482" width="600" height="185"/>
                                 <subviews>
@@ -64,7 +64,7 @@
                                         </constraints>
                                         <state key="normal" image="leftButtonIcon"/>
                                         <connections>
-                                            <action selector="leftButtonPressed:" destination="xnX-tw-0AM" eventType="touchUpInside" id="koH-Pc-YYv"/>
+                                            <action selector="leftButtonPressed:" destination="xnX-tw-0AM" eventType="touchDown" id="yAi-qu-Y32"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufd-YP-bNf">
@@ -75,7 +75,7 @@
                                         </constraints>
                                         <state key="normal" image="downButtonIcon"/>
                                         <connections>
-                                            <action selector="downButtonPressed:" destination="xnX-tw-0AM" eventType="touchUpInside" id="kji-B7-gbh"/>
+                                            <action selector="downButtonPressed:" destination="xnX-tw-0AM" eventType="touchDown" id="RsI-vv-AVC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu9-i4-ToW">
@@ -86,7 +86,7 @@
                                         </constraints>
                                         <state key="normal" image="rightButtonIcon"/>
                                         <connections>
-                                            <action selector="rightButtonPressed:" destination="xnX-tw-0AM" eventType="touchUpInside" id="STi-vp-gGv"/>
+                                            <action selector="rightButtonPressed:" destination="xnX-tw-0AM" eventType="touchDown" id="ymF-X9-5yW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ox-Df-Ci7">
@@ -97,7 +97,7 @@
                                         </constraints>
                                         <state key="normal" image="upButtonIcon"/>
                                         <connections>
-                                            <action selector="upButtonPressed:" destination="xnX-tw-0AM" eventType="touchUpInside" id="WWo-3y-m8h"/>
+                                            <action selector="upButtonPressed:" destination="xnX-tw-0AM" eventType="touchDown" id="GwR-D8-ymn"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -117,33 +117,33 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xii-27-SDu" firstAttribute="leading" secondItem="npt-uj-5M0" secondAttribute="leading" id="2xn-MM-rX2"/>
-                            <constraint firstAttribute="trailing" secondItem="Xii-27-SDu" secondAttribute="trailing" id="5qP-sb-sLI"/>
+                            <constraint firstItem="P9r-QK-fFt" firstAttribute="top" secondItem="xpp-IF-jtt" secondAttribute="bottom" id="63V-1G-NYf"/>
                             <constraint firstItem="xpp-IF-jtt" firstAttribute="leading" secondItem="npt-uj-5M0" secondAttribute="leading" id="97H-Na-6nD"/>
                             <constraint firstAttribute="trailing" secondItem="xpp-IF-jtt" secondAttribute="trailing" id="IYh-Jj-86K"/>
-                            <constraint firstItem="Xii-27-SDu" firstAttribute="top" secondItem="xpp-IF-jtt" secondAttribute="bottom" id="TUo-lv-mSt"/>
                             <constraint firstAttribute="trailing" secondItem="p9e-Ge-Mvu" secondAttribute="trailing" id="ZJO-HB-utw"/>
+                            <constraint firstItem="P9r-QK-fFt" firstAttribute="leading" secondItem="npt-uj-5M0" secondAttribute="leading" id="bEE-IX-ZBX"/>
                             <constraint firstItem="p9e-Ge-Mvu" firstAttribute="leading" secondItem="npt-uj-5M0" secondAttribute="leading" id="bUF-fy-qh2"/>
+                            <constraint firstAttribute="trailing" secondItem="P9r-QK-fFt" secondAttribute="trailing" id="dDE-6q-cX0"/>
                             <constraint firstItem="NAK-0F-j20" firstAttribute="top" secondItem="p9e-Ge-Mvu" secondAttribute="bottom" id="dMX-tw-t77"/>
-                            <constraint firstItem="NAK-0F-j20" firstAttribute="top" secondItem="Xii-27-SDu" secondAttribute="bottom" id="gS8-2f-til"/>
                             <constraint firstItem="xpp-IF-jtt" firstAttribute="top" secondItem="xwt-c0-uYF" secondAttribute="bottom" id="i84-aB-J9Y"/>
+                            <constraint firstItem="NAK-0F-j20" firstAttribute="top" secondItem="P9r-QK-fFt" secondAttribute="bottom" id="tIO-EQ-6cE"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="667"/>
                     <connections>
+                        <outlet property="cameraView" destination="P9r-QK-fFt" id="faM-LK-9OZ"/>
                         <outlet property="congtrolView" destination="p9e-Ge-Mvu" id="oU7-AX-cRT"/>
                         <outlet property="downButton" destination="ufd-YP-bNf" id="840-SB-8wb"/>
                         <outlet property="leftButton" destination="YM7-bx-riC" id="RJp-o0-JCq"/>
                         <outlet property="rigthButton" destination="bu9-i4-ToW" id="W6v-ij-cd2"/>
                         <outlet property="upButton" destination="3Ox-Df-Ci7" id="hg5-au-4FL"/>
-                        <outlet property="webView" destination="Xii-27-SDu" id="GKm-yx-vuI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wX-I5-04B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1498" y="-1212"/>
+            <point key="canvasLocation" x="-1499.2" y="-1212.1439280359821"/>
         </scene>
     </scenes>
     <resources>

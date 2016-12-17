@@ -32,7 +32,7 @@ static PSApiManager* _manager = NULL;
   self = [super init];
   if (self) {
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-    _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://URL HERE"] sessionConfiguration:config];
+    _sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"http://192.168.43.198:3000"] sessionConfiguration:config];
     _sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
     _sessionManager.requestSerializer = [AFJSONRequestSerializer serializer];
     [_sessionManager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
@@ -43,47 +43,62 @@ static PSApiManager* _manager = NULL;
 }
 
 - (void)moveForward {
-    [self.sessionManager POST:@"forward" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-  
+    [self.sessionManager GET:@"forward" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
      // completion(responseObject, nil);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-  
-  
      // completion(nil, error);
     }];
   
 }
+
 - (void)moveReverse {
-  
+  [self.sessionManager GET:@"reverse" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    // completion(responseObject, nil);
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    // completion(nil, error);
+  }];
 }
 
 - (void)moveLeft {
+  [self.sessionManager GET:@"left" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    // completion(responseObject, nil);
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    // completion(nil, error);
+  }];
   
 }
 
 - (void)moveRight {
-  
+  [self.sessionManager GET:@"right" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    // completion(responseObject, nil);
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    // completion(nil, error);
+  }];
 }
 
 - (void)stop {
-  
+  [self.sessionManager GET:@"stop" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    // completion(responseObject, nil);
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    // completion(nil, error);
+  }];
 }
 
-- (void)forward {
+- (void)on {
+  [self.sessionManager GET:@"on" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    // completion(responseObject, nil);
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    // completion(nil, error);
+  }];
 }
- // NSDictionary *params = @{@"email": user.email,
-             //              @"password": user.password,
-               //            @"deviceId": @"234234234234234"
-                //           };
- // self.sessionManager
-//  [self.sessionManager POST:@"forward" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
-//    
-//   // completion(responseObject, nil);
-//  } failure:^(NSURLSessionDataTask *task, NSError *error) {
-//    
-//   // NSLog(@"%@", error);
-//    
-//   // completion(nil, error);
-//  }];
+
+- (void)off {
+  [self.sessionManager GET:@"off" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+    // completion(responseObject, nil);
+  } failure:^(NSURLSessionDataTask *task, NSError *error) {
+    // completion(nil, error);
+  }];
+}
+
 
 @end

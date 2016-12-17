@@ -20,4 +20,7 @@ typedef void(^CompletionBlock)(id response, NSError* error);
 - (void)moveRight;
 - (void)stop;
 
+- (void)on;
+- (void)off;
+
 @end
