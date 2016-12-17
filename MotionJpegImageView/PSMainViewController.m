@@ -9,8 +9,9 @@
 #import "PSMainViewController.h"
 #import "MotionJpegImageView.h"
 #import <SocketRocket/SRWebSocket.h>
+#import "PSApiManager.h"
 
-@interface PSMainViewController () <SRWebSocketDelegate>
+@interface PSMainViewController ()
 
 
 @property (retain, nonatomic) IBOutlet MotionJpegImageView *imageView;
@@ -33,8 +34,7 @@
   webFrame.origin.y = 0.0;
   webFrame.origin.x = 0.0;
   self.webView.frame = webFrame;
-  
-  NSURL *url = [NSURL URLWithString:@"http://195.67.26.73/mjpg/video.mjpg"];
+  NSURL *url = [NSURL URLWithString:@"http://192.168.43.122:8080/stream"];
   
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
   [self.view addSubview:self.webView];
@@ -61,6 +61,19 @@
   SRWebSocket *rusSocket = [[SRWebSocket alloc] initWithURLRequest:request];
   rusSocket.delegate = self;
   [rusSocket open];
+}
+
+- (IBAction)resetButtonPressed:(UIButton *)sender {
+  [_imageView stop];
+  [_imageView play];
+}
+
+#pragma mark - SocketRocket Delegate
+
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket {
+ // NSString *helloMsg = @"{\"event\":\"pusher:subscribe\",\"data\":{\"channel\":\"chat_ru\"}}";
+ // [webSocket send:helloMsg];
+  //webSocket sen
 }
 
 /*

@@ -10,6 +10,7 @@
 		9231F56D1E05585600E83D01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9231F56C1E05585600E83D01 /* Main.storyboard */; };
 		9231F5701E05589500E83D01 /* PSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9231F56F1E05589500E83D01 /* PSMainViewController.m */; };
 		9231F57E1E05625600E83D01 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9231F57D1E05625600E83D01 /* Launch Screen.storyboard */; };
+		9231F5841E058C5800E83D01 /* PSApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9231F5831E058C5800E83D01 /* PSApiManager.m */; };
 		C5690170FA76D150CF0686FA /* libPods-MotionJpegImageView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7E8F52601D348FFBF9D023 /* libPods-MotionJpegImageView.a */; };
 		C636B828143B7538008CB95D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C636B827143B7538008CB95D /* UIKit.framework */; };
 		C636B82A143B7538008CB95D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C636B829143B7538008CB95D /* Foundation.framework */; };
@@ -28,6 +29,8 @@
 		9231F56E1E05589500E83D01 /* PSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMainViewController.h; sourceTree = "<group>"; };
 		9231F56F1E05589500E83D01 /* PSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMainViewController.m; sourceTree = "<group>"; };
 		9231F57D1E05625600E83D01 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9231F5821E058C5800E83D01 /* PSApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSApiManager.h; sourceTree = "<group>"; };
+		9231F5831E058C5800E83D01 /* PSApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSApiManager.m; sourceTree = "<group>"; };
 		AD7E8F52601D348FFBF9D023 /* libPods-MotionJpegImageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotionJpegImageView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C636B823143B7538008CB95D /* MotionJpegImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionJpegImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C636B827143B7538008CB95D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -62,6 +65,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9231F57F1E058C1600E83D01 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				C636B83A143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.h */,
+				C636B83B143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m */,
+				C636B836143B7538008CB95D /* MotionJpegImageViewAppDelegate.h */,
+				C636B837143B7538008CB95D /* MotionJpegImageViewAppDelegate.mm */,
+				C636B84E143B7622008CB95D /* MotionJpegImageView.h */,
+				C636B84F143B7622008CB95D /* MotionJpegImageView.mm */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		9231F5801E058C2C00E83D01 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9231F56E1E05589500E83D01 /* PSMainViewController.h */,
+				9231F56F1E05589500E83D01 /* PSMainViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9231F5811E058C4000E83D01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9231F5821E058C5800E83D01 /* PSApiManager.h */,
+				9231F5831E058C5800E83D01 /* PSApiManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C636B818143B7538008CB95D = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +128,10 @@
 		C636B82D143B7538008CB95D /* MotionJpegImageView */ = {
 			isa = PBXGroup;
 			children = (
-				C636B836143B7538008CB95D /* MotionJpegImageViewAppDelegate.h */,
-				C636B837143B7538008CB95D /* MotionJpegImageViewAppDelegate.mm */,
-				C636B84E143B7622008CB95D /* MotionJpegImageView.h */,
-				C636B84F143B7622008CB95D /* MotionJpegImageView.mm */,
-				C636B839143B7538008CB95D /* iPhone */,
+				9231F5811E058C4000E83D01 /* Model */,
+				C636B839143B7538008CB95D /* StoryBoards */,
+				9231F5801E058C2C00E83D01 /* ViewControllers */,
+				9231F57F1E058C1600E83D01 /* Vendors */,
 				C636B82E143B7538008CB95D /* Supporting Files */,
 			);
 			path = MotionJpegImageView;
@@ -115,18 +148,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C636B839143B7538008CB95D /* iPhone */ = {
+		C636B839143B7538008CB95D /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				C636B83A143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.h */,
-				C636B83B143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m */,
 				C636B83D143B7538008CB95D /* MainWindow_iPhone.xib */,
 				9231F56C1E05585600E83D01 /* Main.storyboard */,
 				9231F57D1E05625600E83D01 /* Launch Screen.storyboard */,
-				9231F56E1E05589500E83D01 /* PSMainViewController.h */,
-				9231F56F1E05589500E83D01 /* PSMainViewController.m */,
 			);
-			name = iPhone;
+			name = StoryBoards;
 			sourceTree = "<group>";
 		};
 		F91B142A99098EDD6C8CF82B /* Pods */ = {
@@ -168,6 +197,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = "ThinkFlood Inc";
+				TargetAttributes = {
+					C636B822143B7538008CB95D = {
+						DevelopmentTeam = XMY24F5S72;
+					};
+				};
 			};
 			buildConfigurationList = C636B81D143B7538008CB95D /* Build configuration list for PBXProject "MotionJpegImageView" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -258,6 +292,7 @@
 				9231F5701E05589500E83D01 /* PSMainViewController.m in Sources */,
 				C636B83C143B7538008CB95D /* MotionJpegImageViewAppDelegate_iPhone.m in Sources */,
 				C636B850143B7622008CB95D /* MotionJpegImageView.mm in Sources */,
+				9231F5841E058C5800E83D01 /* PSApiManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +359,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D27DA724DCB128BE9DBBE628 /* Pods-MotionJpegImageView.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XMY24F5S72;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionJpegImageView/MotionJpegImageView-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MotionJpegImageView/MotionJpegImageView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiTechParkBelarus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -338,11 +375,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C423F4FF198E32AB81BEE42 /* Pods-MotionJpegImageView.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = XMY24F5S72;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MotionJpegImageView/MotionJpegImageView-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MotionJpegImageView/MotionJpegImageView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiTechParkBelarus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

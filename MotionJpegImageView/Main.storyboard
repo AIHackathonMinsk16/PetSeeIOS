@@ -36,6 +36,9 @@
                                     <constraint firstAttribute="width" constant="46" id="WBK-K5-y0e"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="Xga-b8-UAs" eventType="touchUpInside" id="bM5-s7-oLD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.75686274509999996" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
