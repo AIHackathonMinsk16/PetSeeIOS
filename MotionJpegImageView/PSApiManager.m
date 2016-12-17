@@ -85,6 +85,5 @@ static PSApiManager* _manager = NULL;
 //    
 //   // completion(nil, error);
 //  }];
-}
 
 @end

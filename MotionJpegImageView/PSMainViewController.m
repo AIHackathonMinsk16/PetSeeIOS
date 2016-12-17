@@ -8,7 +8,6 @@
 
 #import "PSMainViewController.h"
 #import "MotionJpegImageView.h"
-#import <SocketRocket/SRWebSocket.h>
 #import "PSApiManager.h"
 
 @interface PSMainViewController ()
@@ -17,6 +16,12 @@
 @property (retain, nonatomic) IBOutlet MotionJpegImageView *imageView;
 @property (retain, nonatomic) IBOutlet UIWebView *webView;
 
+@property (retain, nonatomic) IBOutlet UIView *congtrolView;
+@property (retain, nonatomic) IBOutlet UIButton *leftButton;
+@property (retain, nonatomic) IBOutlet UIButton *rigthButton;
+@property (retain, nonatomic) IBOutlet UIButton *upButton;
+@property (retain, nonatomic) IBOutlet UIButton *downButton;
+
 @end
 
 @implementation PSMainViewController
@@ -24,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//  self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+  self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
   self.webView.userInteractionEnabled = NO;
   CGFloat scaleRatio = 1;
   CGAffineTransform scalingTransform =
@@ -34,10 +39,11 @@
   webFrame.origin.y = 0.0;
   webFrame.origin.x = 0.0;
   self.webView.frame = webFrame;
-  NSURL *url = [NSURL URLWithString:@"http://192.168.43.122:8080/stream"];
+//  NSURL *url = [NSURL URLWithString:@"http://192.168.43.122:8080/stream"];
+   NSURL *url = [NSURL URLWithString:@"http://195.67.26.73/mjpg/video.mjpg"];
   
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
-  [self.view addSubview:self.webView];
+//  [self.view addSubview:self.webView];
   [self.webView loadRequest:request];
   
   webFrame.origin.y += webFrame.size.height;
@@ -45,23 +51,30 @@
   self.imageView.url = url;
   [_imageView play];
   
-  [self confgureWebSockets];
+  [self configureButtons];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configureButtons {
+  [self.upButton addTarget:self
+                 action:@selector(methodTouchUpInside:)
+       forControlEvents: UIControlEventTouchUpInside];
+  [self.downButton addTarget:self
+                    action:@selector(methodTouchUpInside:)
+          forControlEvents: UIControlEventTouchUpInside];
+  [self.leftButton addTarget:self
+                    action:@selector(methodTouchUpInside:)
+          forControlEvents: UIControlEventTouchUpInside];
+  [self.rigthButton addTarget:self
+                    action:@selector(methodTouchUpInside:)
+          forControlEvents: UIControlEventTouchUpInside];
 }
 
-- (void)confgureWebSockets {
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id)coordinator {
   
-  NSURL *url = [NSURL URLWithString:@"wss://ws.pusherapp.com/app/4e0ebd7a8b66fa3554a4?protocol=6&client=js&version=2.0.0&flash=false"];
-  
-  NSURLRequest *request = [NSURLRequest requestWithURL:url];
-  SRWebSocket *rusSocket = [[SRWebSocket alloc] initWithURLRequest:request];
-  rusSocket.delegate = self;
-  [rusSocket open];
 }
+
+
+#pragma mark - IBActions
 
 - (IBAction)resetButtonPressed:(UIButton *)sender {
   [_imageView stop];
@@ -70,11 +83,26 @@
 
 #pragma mark - SocketRocket Delegate
 
-- (void)webSocketDidOpen:(SRWebSocket *)webSocket {
- // NSString *helloMsg = @"{\"event\":\"pusher:subscribe\",\"data\":{\"channel\":\"chat_ru\"}}";
- // [webSocket send:helloMsg];
-  //webSocket sen
+- (IBAction)leftButtonPressed:(UIButton *)sender {
+  [[PSApiManager manager] moveLeft];
 }
+
+- (IBAction)rightButtonPressed:(id)sender {
+   [[PSApiManager manager] moveRight];
+}
+
+- (IBAction)upButtonPressed:(UIButton *)sender {
+   [[PSApiManager manager] moveForward];
+}
+
+- (IBAction)downButtonPressed:(UIButton *)sender {
+   [[PSApiManager manager] moveReverse];
+}
+
+- (void)methodTouchUpInside:(id)sender{
+  [[PSApiManager manager] stop];
+}
+
 
 /*
 #pragma mark - Navigation
@@ -89,6 +117,11 @@
 - (void)dealloc {
   [_imageView release];
   [_webView release];
+  [_congtrolView release];
+  [_leftButton release];
+  [_rigthButton release];
+  [_upButton release];
+  [_downButton release];
   [super dealloc];
 }
 - (void)viewDidUnload {
