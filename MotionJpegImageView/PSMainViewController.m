@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//  self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+  self.webView = [[UIWebView alloc] initWithFrame:self.webView.bounds];
   self.webView.userInteractionEnabled = NO;
   CGFloat scaleRatio = self.view.frame.size.height/self.view.frame.size.width;
   CGAffineTransform scalingTransform =
