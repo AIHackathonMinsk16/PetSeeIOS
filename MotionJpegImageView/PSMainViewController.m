@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
-  self.webView = [[UIWebView alloc] initWithFrame:self.cameraView.frame];
+  self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 54, self.view.frame.size.width, self.view.frame.size.height - 54)];
   self.webView.userInteractionEnabled = NO;
   CGFloat scaleRatio = self.view.frame.size.height/self.view.frame.size.width;
   CGAffineTransform scalingTransform =
@@ -40,8 +40,8 @@
   webFrame.origin.y = 0.0;
   webFrame.origin.x = 0.0;
   self.webView.frame = webFrame;
-  NSURL *url = [NSURL URLWithString:@"http://192.168.43.57:5000/stream"];
-  //NSURL *url = [NSURL URLWithString:@"http://195.67.26.73/mjpg/video.mjpg"];
+ // NSURL *url = [NSURL URLWithString:@"http://192.168.43.57:5000/stream"];
+  NSURL *url = [NSURL URLWithString:@"http://195.67.26.73/mjpg/video.mjpg"];
   
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
   [self.cameraView addSubview:self.webView];
