@@ -30,9 +30,9 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
-  self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 54, self.view.frame.size.width, self.view.frame.size.height - 54)];
+  self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 0)];
   self.webView.userInteractionEnabled = NO;
-  CGFloat scaleRatio = self.view.frame.size.height/self.view.frame.size.width;
+  CGFloat scaleRatio = (self.view.frame.size.height + 54)/self.view.frame.size.width;
   CGAffineTransform scalingTransform =
   CGAffineTransformScale(CGAffineTransformIdentity, scaleRatio, scaleRatio);
   [self.webView setTransform:scalingTransform];
@@ -40,8 +40,8 @@
   webFrame.origin.y = 0.0;
   webFrame.origin.x = 0.0;
   self.webView.frame = webFrame;
- // NSURL *url = [NSURL URLWithString:@"http://192.168.43.57:5000/stream"];
-  NSURL *url = [NSURL URLWithString:@"http://195.67.26.73/mjpg/video.mjpg"];
+  NSURL *url = [NSURL URLWithString:@"http://192.168.43.198:5000/stream"];
+ // NSURL *url = [NSURL URLWithString:@"http://195.67.26.73/mjpg/video.mjpg"];
   
   NSURLRequest *request = [NSURLRequest requestWithURL:url];
   [self.cameraView addSubview:self.webView];
@@ -50,6 +50,7 @@
   webFrame.origin.y += webFrame.size.height;
   self.imageView = [[MotionJpegImageView alloc] initWithFrame:webFrame];
   self.imageView.url = url;
+  self.imageView.contentMode = UIViewContentModeScaleToFill;
   [_imageView play];
   
   [self configureButtons];
