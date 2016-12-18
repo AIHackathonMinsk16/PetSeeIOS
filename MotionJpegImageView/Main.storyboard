@@ -116,7 +116,7 @@
                                 </constraints>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pqH-eJ-Htk">
-                                <rect key="frame" x="521" y="64" width="51" height="31"/>
+                                <rect key="frame" x="521" y="74" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="Xt9-GM-6BN"/>
                                     <constraint firstAttribute="height" constant="31" id="abr-rq-wjf"/>
@@ -133,7 +133,7 @@
                             <constraint firstItem="P9r-QK-fFt" firstAttribute="top" secondItem="xpp-IF-jtt" secondAttribute="bottom" id="63V-1G-NYf"/>
                             <constraint firstItem="xpp-IF-jtt" firstAttribute="leading" secondItem="npt-uj-5M0" secondAttribute="leading" id="97H-Na-6nD"/>
                             <constraint firstAttribute="trailing" secondItem="xpp-IF-jtt" secondAttribute="trailing" id="IYh-Jj-86K"/>
-                            <constraint firstItem="pqH-eJ-Htk" firstAttribute="top" secondItem="xpp-IF-jtt" secondAttribute="bottom" constant="10" id="Vyg-Lo-pLQ"/>
+                            <constraint firstItem="pqH-eJ-Htk" firstAttribute="top" secondItem="xpp-IF-jtt" secondAttribute="bottom" constant="20" id="Vyg-Lo-pLQ"/>
                             <constraint firstAttribute="trailing" secondItem="p9e-Ge-Mvu" secondAttribute="trailing" id="ZJO-HB-utw"/>
                             <constraint firstItem="P9r-QK-fFt" firstAttribute="leading" secondItem="npt-uj-5M0" secondAttribute="leading" id="bEE-IX-ZBX"/>
                             <constraint firstItem="p9e-Ge-Mvu" firstAttribute="leading" secondItem="npt-uj-5M0" secondAttribute="leading" id="bUF-fy-qh2"/>
